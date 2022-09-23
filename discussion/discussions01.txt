@@ -1,1 +1,60 @@
-Hello
+CLI (Command Line Interface) commands:
+
+mkdir
+	- make directory/folder
+		- mkdir <folderName>
+			- it creates new directory/folder
+cd 
+	- change directory
+		- cd <folderName / path to folder>
+			- it change the current directory/folder we currently working on with our CLI(terminal/gitbash)
+touch
+	- used to create files
+		- touch <fileName>
+			- it creates new files
+ls
+	- in DOS it is dir
+		- list the file and folder contained by the current directory
+pwd
+	- present working directory
+		- it shows the current folder that we are working
+subl . - sublime
+code . - vscode
+
+Configure Git:
+git config --global user.email "<emailFromGitLab/Github>"
+	- this will allow us to identify the account from gitlab or github who will push/upload files into our online GitLab or GitHub services
+git config --global user.name "<usernameFromGitLab/Github>"
+	- this will allow us to identify the name of the user who is trying to upload/push files into our online repository services
+	- this will also determine the name of the person who uploaded the latest commit/version in our repo
+
+Push for the very first time:
+
+git init
+	- allows us to initialize a local folder as a local git repo. This means that the folder and its file is now tracked by git	
+
+git status
+	- allows us to verify/check the latest git command
+
+git add .
+	- allows us to add files and updates into a new commit/version of our files and folders to be uploaded in our online repo
+git commit -m "<commitMessage>"
+	- it allows us to create a new version of our files and folders based on the updates added using git add .
+	- commit messages start with a verb <added discussion, updated index.html, changed solution>
+	- at least less than 50 characters
+
+Mini-Activity
+1. In the s01 folder, create an activity folder and an aboutme.txt file inside of it.
+2. Initialize a local git repository using git init.
+3. Peek at the states of the files/folders using git status.
+4. Stage the files in preparation for creating a commit using git add.
+5. Create a commit using git commit.
+6. Check the commit history using git log/git log --oneline.
+7. Add a paragraph that describes your motivation in joining the bootcamp
+8. Check the status of the files/folders, stage the files and create a commit.
+9. Add a paragraph that briefly narrates your work experience.
+10. Check the status of the files/folders, stage the files and create a commit again.
+11. Create a git repository named S02.
+12. Connect to a remote repository using git remote add origin.
+13. Upload your changes to the GitLab project by doing git push origin master.
+14. Add the link in our Teams and post the screen shot of our code.
